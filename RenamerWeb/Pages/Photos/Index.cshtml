@@ -21,9 +21,9 @@
     </thead>
     <tbody>
 @foreach (var item in Model.Photo) {
-    if(item.Description == null)
-    {    
-            <tr>
+    if (item.Description == null)
+    {
+           <tr>
             <td>
                 <img src="@item.Image" alt="Image" width="50%"/>
             </td>
@@ -35,7 +35,7 @@
                 <a asp-page="./Details" asp-route-id="@item.PhotoId">Details</a> |
             </td>
         </tr>
-     }
+    }
 }
     </tbody>
 </table>

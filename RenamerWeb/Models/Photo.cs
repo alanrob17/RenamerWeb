@@ -15,11 +15,9 @@ namespace RenamerWeb.Models
         [Required]
         public string? Folder { get; set; }
 
-        [StringLength(250, MinimumLength = 3)]
-        public string? Description { get; set; } = string.Empty;
+        public string? Description { get; set; }
 
-        [StringLength(250, MinimumLength = 3)]
-        public string? Image { get; set; } = string.Empty;
+        public string? Image { get; set; }
 
     }
 }

@@ -36,6 +36,7 @@ namespace RenamerWeb.Pages.Photos
                 return NotFound();
             }
             Photo = photo;
+
             return Page();
         }
 
